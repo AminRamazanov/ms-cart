@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ms-catalog
+  namespace: my-project
+spec:
+  selector:
+    app: ms-catalog
+  ports:
+    - protocol: TCP
+      port: 8083        # Service portu
+      targetPort: 8083  # Container portu
+  type: ClusterIP
