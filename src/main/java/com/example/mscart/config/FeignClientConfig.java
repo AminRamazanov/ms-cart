@@ -1,0 +1,36 @@
+package com.example.mscart.config;
+
+import com.example.mscart.client.decoder.ErrorDecoder;
+import feign.Logger;
+import feign.RequestInterceptor;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
+
+@Configuration
+public class FeignClientConfig {
+
+    @Bean
+    public RequestInterceptor requestInterceptor() {
+        return requestTemplate -> {
+            var requestAttributes = RequestContextHolder.getRequestAttributes();
+            if (requestAttributes instanceof ServletRequestAttributes servletRequestAttributes) {
+                String token = servletRequestAttributes.getRequest().getHeader("Authorization");
+                if (token != null) {
+                    requestTemplate.header("Authorization", token);
+                }
+            }
+        };
+    }
+
+    @Bean
+    public ErrorDecoder errorDecoder() {
+        return new ErrorDecoder();
+    }
+
+    @Bean
+    Logger.Level feignLoggerLevel() {
+        return Logger.Level.FULL;
+    }
+}
