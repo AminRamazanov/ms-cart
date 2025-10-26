@@ -80,7 +80,8 @@ management:
     readinessState:
       enabled: true
 
-secret-key: ${SECRET_KEY}           # Secret
+secret-key: ${SECRET_KEY}
+
 
 #spring:
 #  application:
