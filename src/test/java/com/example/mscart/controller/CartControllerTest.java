@@ -1,4 +1,4 @@
-package com.example.mscart.scheduling;
+package com.example.mscart.controller;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -9,16 +9,16 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @ExtendWith(MockitoExtension.class)
-class SchedulerServiceTest {
+class CartControllerTest {
 
     @Mock
-    private com.example.mscart.service.OutboxService outboxService;
+    private com.example.mscart.service.CartService cartService;
 
     @InjectMocks
-    private SchedulerService schedulerService;
+    private CartController cartController;
 
     @Test
-    void shouldCreateSchedulerService() {
-        assertNotNull(schedulerService);
+    void shouldCreateCartController() {
+        assertNotNull(cartController);
     }
 }

@@ -1,6 +1,5 @@
 package com.example.mscart.messaging;
 
-import com.example.mscart.service.CartService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -13,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 class MessageListenerTest {
 
     @Mock
-    private CartService cartService;
+    private com.example.mscart.service.CartService cartService;
 
     @InjectMocks
     private MessageListener messageListener;

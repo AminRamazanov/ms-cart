@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 class SecurityConfigTest {
 
     @Mock
-    private JwtRequestFilter jwtRequestFilter;
+    private com.example.mscart.jwt.JwtRequestFilter jwtRequestFilter;
 
     @Test
     void shouldCreateSecurityConfig() {

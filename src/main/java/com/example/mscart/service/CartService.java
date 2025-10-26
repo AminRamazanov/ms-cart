@@ -10,7 +10,7 @@ public interface CartService {
 
     Cart addStandardProductToCart(Long userId, Long productId);
 
-    Cart addCustomProductToCart(CustomBouquetCreatedEvent customBouquetCreatedEvent);
+    void addCustomProductToCart(CustomBouquetCreatedEvent customBouquetCreatedEvent);
 
     void removeProductFromCart(Long userId, Long productId);
 
