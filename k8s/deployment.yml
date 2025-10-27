@@ -63,6 +63,11 @@ spec:
                 configMapKeyRef:
                   name: ms-cart-config
                   key: RABBIT_USERNAME
+            - name: RABBIT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: ms-cart-secret
+                  key: RABBIT_PASSWORD
             - name: CART_EXCHANGE
               valueFrom:
                 configMapKeyRef:
