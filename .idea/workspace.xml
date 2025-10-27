@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81795a6e-b955-430f-a3c0-b6c91c7ceacf" name="Changes" comment="" />
+    <list default="true" id="81795a6e-b955-430f-a3c0-b6c91c7ceacf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,6 +46,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -62,8 +70,9 @@
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;Spring Boot.MsCartApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;future&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/IdeaProjects/ms-cart/src/main/java/com/example/mscart/model/request&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/IdeaProjects/ms-cart&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -77,10 +86,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\IdeaProjects\ms-cart" />
+      <recent name="C:\Users\user\IdeaProjects\ms-cart\src\main\java\com\example\mscart\builder" />
       <recent name="C:\Users\user\IdeaProjects\ms-cart\src\main\java\com\example\mscart\model\request" />
       <recent name="C:\Users\user\IdeaProjects\ms-cart\src\main\java\com\example\mscart\dao" />
       <recent name="C:\Users\user\IdeaProjects\ms-cart\src\main\java\com\example\mscart\test" />
-      <recent name="C:\Users\user\IdeaProjects\ms-cart\src\main\java\com\example\mscart\model\response" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.mscart.model.response" />
@@ -180,6 +190,7 @@
       <workItem from="1761416395343" duration="1183000" />
       <workItem from="1761469342664" duration="596000" />
       <workItem from="1761503906816" duration="591000" />
+      <workItem from="1761577143965" duration="1297000" />
     </task>
     <servers />
   </component>

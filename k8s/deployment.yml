@@ -1,0 +1,103 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ms-cart
+  namespace: my-project
+  annotations:
+    keel.sh/policy: force
+    keel.sh/trigger: poll
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ms-cart
+  template:
+    metadata:
+      labels:
+        app: ms-cart
+    spec:
+      containers:
+        - name: ms-cart
+          image: aminramazanov/ms-cart:dev
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8087
+          env:
+            - name: DB_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: ms-cart-config
+                  key: DB_URL
+            - name: DB_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: ms-cart-secret
+                  key: DB_USERNAME
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: ms-cart-secret
+                  key: DB_PASSWORD
+            - name: REDIS_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: ms-cart-config
+                  key: REDIS_HOST
+            - name: REDIS_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: ms-cart-config
+                  key: REDIS_PORT
+            - name: RABBIT_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: ms-cart-config
+                  key: RABBIT_HOST
+            - name: RABBIT_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: ms-cart-config
+                  key: RABBIT_PORT
+            - name: RABBIT_USERNAME
+              valueFrom:
+                configMapKeyRef:
+                  name: ms-cart-config
+                  key: RABBIT_USERNAME
+            - name: CART_EXCHANGE
+              valueFrom:
+                configMapKeyRef:
+                  name: ms-cart-config
+                  key: CART_EXCHANGE
+            - name: CART_ROUTING_KEY
+              valueFrom:
+                configMapKeyRef:
+                  name: ms-cart-config
+                  key: CART_ROUTING_KEY
+            - name: SECRET_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: ms-cart-secret
+                  key: SECRET_KEY
+            - name: SERVER_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: ms-cart-config
+                  key: SERVER_PORT
+            - name: CATALOG_SERVICE_URL
+              value: "http://ms-catalog:8083"
+          livenessProbe:
+            httpGet:
+              path: /actuator/health/liveness
+              port: 8087
+            initialDelaySeconds: 30
+            periodSeconds: 15
+            timeoutSeconds: 5
+            failureThreshold: 3
+          readinessProbe:
+            httpGet:
+              path: /actuator/health/readiness
+              port: 8087
+            initialDelaySeconds: 15
+            periodSeconds: 10
+            timeoutSeconds: 5
+            failureThreshold: 3
