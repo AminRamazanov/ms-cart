@@ -1,4 +1,4 @@
-name: CI - Build & Test ms-catalog
+name: CI - Build & Test ms-cart
 
 on:
   push:
@@ -44,7 +44,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/ms-catalog:dev
+          tags: ${{ secrets.DOCKER_USERNAME }}/ms-cart:dev
 
       - name: Verify image pushed
-        run: docker pull ${{ secrets.DOCKER_USERNAME }}/ms-catalog:dev
+        run: docker pull ${{ secrets.DOCKER_USERNAME }}/ms-cart:dev

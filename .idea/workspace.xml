@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="81795a6e-b955-430f-a3c0-b6c91c7ceacf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ms-cart" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Exception" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="31NJWVwl8UbHNBAWprTlU8iTskG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build ms-cart.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.MsCartApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;future&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/IdeaProjects/ms-cart&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\IdeaProjects\ms-cart" />
+      <recent name="C:\Users\user\IdeaProjects\ms-cart\src\main\java\com\example\mscart\builder" />
+      <recent name="C:\Users\user\IdeaProjects\ms-cart\src\main\java\com\example\mscart\model\request" />
+      <recent name="C:\Users\user\IdeaProjects\ms-cart\src\main\java\com\example\mscart\dao" />
+      <recent name="C:\Users\user\IdeaProjects\ms-cart\src\main\java\com\example\mscart\test" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.mscart.model.response" />
+      <recent name="com.example.mscart.model.request" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MsCartApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ms-cart.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.mscart.MsCartApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.26775.15" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.26775.15" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="81795a6e-b955-430f-a3c0-b6c91c7ceacf" name="Changes" comment="" />
+      <created>1755358628665</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1755358628665</updated>
+      <workItem from="1755358629651" duration="598000" />
+      <workItem from="1755423131539" duration="595000" />
+      <workItem from="1755428732347" duration="594000" />
+      <workItem from="1755442296057" duration="596000" />
+      <workItem from="1755527331000" duration="598000" />
+      <workItem from="1755792378112" duration="594000" />
+      <workItem from="1755795521491" duration="596000" />
+      <workItem from="1755879471243" duration="1139000" />
+      <workItem from="1755881802777" duration="1025000" />
+      <workItem from="1755954403209" duration="14058000" />
+      <workItem from="1756052863607" duration="3473000" />
+      <workItem from="1756058186386" duration="1204000" />
+      <workItem from="1756226683012" duration="1973000" />
+      <workItem from="1756239316344" duration="487000" />
+      <workItem from="1756396631547" duration="1673000" />
+      <workItem from="1756485302292" duration="596000" />
+      <workItem from="1756568862174" duration="1195000" />
+      <workItem from="1756746369711" duration="604000" />
+      <workItem from="1756830737170" duration="7099000" />
+      <workItem from="1756908259641" duration="4494000" />
+      <workItem from="1757088792656" duration="596000" />
+      <workItem from="1757090034463" duration="560000" />
+      <workItem from="1757171352990" duration="5128000" />
+      <workItem from="1757183951369" duration="598000" />
+      <workItem from="1757230221384" duration="1938000" />
+      <workItem from="1757350124392" duration="6971000" />
+      <workItem from="1757520413694" duration="6689000" />
+      <workItem from="1757604509136" duration="744000" />
+      <workItem from="1757607462259" duration="595000" />
+      <workItem from="1757690252497" duration="5413000" />
+      <workItem from="1757763149203" duration="1395000" />
+      <workItem from="1757774387396" duration="2157000" />
+      <workItem from="1757836367768" duration="867000" />
+      <workItem from="1757850590612" duration="4409000" />
+      <workItem from="1757863135051" duration="1259000" />
+      <workItem from="1757955159955" duration="599000" />
+      <workItem from="1758035617155" duration="1875000" />
+      <workItem from="1758045949519" duration="4587000" />
+      <workItem from="1758064283024" duration="1310000" />
+      <workItem from="1758065763813" duration="349000" />
+      <workItem from="1758124857076" duration="1870000" />
+      <workItem from="1758224704787" duration="702000" />
+      <workItem from="1758555853339" duration="537000" />
+      <workItem from="1758635323399" duration="590000" />
+      <workItem from="1758642479729" duration="953000" />
+      <workItem from="1758816617113" duration="598000" />
+      <workItem from="1759076737599" duration="32000" />
+      <workItem from="1759648823302" duration="32000" />
+      <workItem from="1759935541130" duration="31000" />
+      <workItem from="1760183220374" duration="3373000" />
+      <workItem from="1760262379256" duration="3362000" />
+      <workItem from="1760286132597" duration="1334000" />
+      <workItem from="1760369172169" duration="8472000" />
+      <workItem from="1760452445394" duration="13373000" />
+      <workItem from="1760542515561" duration="5798000" />
+      <workItem from="1760558090262" duration="632000" />
+      <workItem from="1760715817604" duration="3228000" />
+      <workItem from="1760804455130" duration="1191000" />
+      <workItem from="1760862561359" duration="4483000" />
+      <workItem from="1760985318453" duration="3031000" />
+      <workItem from="1761058336704" duration="1896000" />
+      <workItem from="1761390415036" duration="308000" />
+      <workItem from="1761393622493" duration="593000" />
+      <workItem from="1761396610512" duration="587000" />
+      <workItem from="1761415024678" duration="592000" />
+      <workItem from="1761416395343" duration="1183000" />
+      <workItem from="1761469342664" duration="596000" />
+      <workItem from="1761503906816" duration="591000" />
+      <workItem from="1761577143965" duration="2817000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,6 +1,5 @@
 package com.example.mscart.scheduling;
 
-import com.example.mscart.service.OutboxService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -13,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 class SchedulerServiceTest {
 
     @Mock
-    private OutboxService outboxService;
+    private com.example.mscart.service.OutboxService outboxService;
 
     @InjectMocks
     private SchedulerService schedulerService;

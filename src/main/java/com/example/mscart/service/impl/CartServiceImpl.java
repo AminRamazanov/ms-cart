@@ -16,7 +16,6 @@ import com.example.mscart.dao.entity.OutboxEntity;
 import com.example.mscart.dao.repository.OutboxRepository;
 import com.example.mscart.eventHandler.OutboxEvent;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import feign.FeignException;
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -104,7 +103,7 @@ public class CartServiceImpl implements CartService {
 
     @Override
     @CircuitBreaker(name = "customBouquetService", fallbackMethod = "fallbackAddCustomProductToCart")
-    public Cart addCustomProductToCart(CustomBouquetCreatedEvent customBouquetCreatedEvent) {
+    public void addCustomProductToCart(CustomBouquetCreatedEvent customBouquetCreatedEvent) {
         log.info("Action.log.addCustomProductToCart started for user {}", customBouquetCreatedEvent.getUserId());
         Cart cart = getCart(customBouquetCreatedEvent.getUserId());
 
@@ -113,7 +112,6 @@ public class CartServiceImpl implements CartService {
 
         redisTemplate.opsForValue().set(CART_KEY_PREFIX + customBouquetCreatedEvent.getUserId(), cart);
         log.info("Action.log.addCustomProductToCart ended for user {}", customBouquetCreatedEvent.getUserId());
-        return cart;
     }
 
     @Override

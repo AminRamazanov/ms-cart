@@ -1,0 +1,33 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-outbox-events-table
+      author: Amin Ramazanov
+      changes:
+        - createTable:
+            tableName: outbox_events_cart
+            columns:
+              - column:
+                  name: id
+                  type: BIGSERIAL
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: payload
+                  type: TEXT
+              - column:
+                  name: processed
+                  type: BOOLEAN
+                  defaultValueBoolean: false
+                  constraints:
+                    nullable: false
+              - column:
+                  name: routing_key
+                  type: VARCHAR(255)
+              - column:
+                  name: created_at
+                  type: TIMESTAMP
+                  defaultValueComputed: CURRENT_TIMESTAMP
+              - column:
+                  name: processed_at
+                  type: TIMESTAMP
